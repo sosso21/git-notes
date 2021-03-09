@@ -1,0 +1,43 @@
+// initialiser le projet
+ $  git init 
+
+/// authentifier 
+ $ git config --global user.name "<votre username>"
+ $ git config --global user.emil "<votre emil>"
+
+// ajouter un fichier à la liste des fichier à sauvgarder 
+ $ git add <npm du fichier>
+ $ git add .    # -> ca veut dire ajouter tout 
+ $ git add --all # -> ca veut dire  ajouter tout 
+
+// voir tt les fichier qu'on a sauvgarde  et le statut du projet
+ $ git status
+
+//supprimer un fichier de la sauvgarde 
+ $ git rm --cached <file>
+
+// réccupérer la sauvegarde  
+ $ git checkout -- .
+
+// confirmier la sauvgarde 
+ $ git commit -m  " message / description"
+
+//ignorer un fichier , un dossier à ignorer 
+ * cree uun fichier .gitignore et y mettre les fichier a ignorer 
+
+// ajoter des branche
+ $  git branch fichierjs 
+
+// ce déplacer vers une branch 
+ $ git checkout fichierjs 
+
+// list des branch 
+ $ git branch --list
+
+// fusioner les branch 
+ $ git merge fichierjs
+
+// metttre en ligne sue github
+ $ git remote add origin https://github.com/<username>/<projetname>.git
+ $ git push -u origin master 
+
